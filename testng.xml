@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <parameter name="Url" value="http://www.amazon.in/"></parameter>
+  <test thread-count="5" name="Test Chrome" parallel="classes">
+ <parameter name="Browser" value="chrome"></parameter> 
+   <classes>
+      <class name="com.qa.testscripts.Amazonsearch"/>
+     </classes>
+  </test> 
+  <test thread-count="5" name="Test edge" parallel="classes">
+ <parameter name="Browser" value="edge"></parameter> 
+   <classes>
+      <class name="com.qa.testscripts.Amazonsearch"/>
+     </classes>
+  </test> 
+
+  <!-- Test -->
+</suite> <!-- Suite -->
